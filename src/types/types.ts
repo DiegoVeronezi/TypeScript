@@ -22,3 +22,26 @@ function printName(heroes : Heroes) : void {
 
 printName({name: "Superman", age: 12});
 printName({name: "Batman"});
+
+
+interface productInterface {
+  brand: string;
+  model: number;
+  speedCalc(value: number): void
+}
+
+const product: productInterface = {
+  brand: "Notebook",
+  model: 3456,
+  speedCalc(){
+    console.log(`this ${this.brand} with model ${this.model}`);
+  }
+}
+
+let unionType: number | string | boolean;
+
+unionType = 34;
+
+unionType = "Diego";
+
+unionType = true;

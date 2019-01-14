@@ -13,3 +13,14 @@ function printName(heroes) {
 }
 printName({ name: "Superman", age: 12 });
 printName({ name: "Batman" });
+var product = {
+    brand: "Notebook",
+    model: 3456,
+    speedCalc: function () {
+        console.log("this " + this.brand + " with model " + this.model);
+    }
+};
+var unionType;
+unionType = 34;
+unionType = "Diego";
+unionType = true;
